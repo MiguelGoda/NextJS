@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import AppContext from '../context/AppContext';
+import AppContext from '@context/AppContext';
 import close from '@icons/icon_close.png'
 import styles from '@styles/orderItem.module.scss';
 
