@@ -22,7 +22,7 @@ const ProductItem = ({ product }) => {
           {state.cart.includes(product) ? (
             <Image width={100} height={100} className={(styles.disabled, styles['add-to-cart-btn'])} src={addedToCartImage} alt="added to cart" />
           ) : (
-            <Image width={50} height={50} className={(styles['add-to-cart-btn'], styles.pointer)} src={addToCartImage} alt="add to cart" width={35} height={35} layout="fixed" />
+            <Image className={(styles['add-to-cart-btn'], styles.pointer)} src={addToCartImage} alt="add to cart" width={35} height={35} layout="fixed" />
           )}
         </figure>
       </div>
