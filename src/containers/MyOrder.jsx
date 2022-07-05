@@ -18,13 +18,15 @@ const MyOrder = () => {
   return (
     <aside className={styles.MyOrder}>
       <div className={styles['title-container']}>
-        <Image src={flechita} alt="arrow" />
+        <Image className={(styles['more-clickable-area'], styles.pointer)} src={flechita} alt="arrow" onClick={() => toggleOrder()} />
         <p className={styles.title}>My order</p>
       </div>
       <div className={styles['my-order-content']}>
-        {state.cart.map((product) => (
-          <OrderItem product={product} key={`orderItem-${product.id}`} />
-        ))}
+        <div className={styles['my-orders']}>
+          {state.cart.map((product) => (
+            <OrderItem product={product} key={`orderItem-${product.id}`} />
+          ))}
+        </div>
         <div className={styles.order}>
           <p>
             <span>Total</span>

@@ -21,6 +21,13 @@
   bottom: 0;
   right: 0;
 }
+.my-orders {
+  overflow: scroll;
+  max-height: 65%;
+}
+.my-orders::-webkit-scrollbar {
+  width: 0px;
+}
 .title-container img {
   transform: rotate(180deg);
   margin-right: 14px;
